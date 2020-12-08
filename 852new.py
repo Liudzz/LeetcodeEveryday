@@ -10,3 +10,4 @@ class Solution:
                 min = mid
             elif arr[mid] < arr[mid - 1] and arr[mid] > arr[mid + 1]:
                 max = mid
+        # 二分 56ms 14.77
