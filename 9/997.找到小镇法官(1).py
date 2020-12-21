@@ -8,20 +8,19 @@ class Solution:
         flag = 1
         for i in range(N):
             flag = 1
-            for j in range(N):
-                if arr[i][j] !=0:
-                    flag = 0
-                    break
-            if flag:
+            if 1 not in arr[i]:
                 for j in range(N):
                     if j!=i and arr[j][i] != 1:
                         flag = 0
                         break
+            else:
+                flag=0
             if flag:
                 return i+1
         if not flag:
             return -1
-# 456 ms
-# 8.68%
-# 25.8 MB
+
+# 408 ms
+# 8.82%
+# 25.7 MB
 # 5.11%
