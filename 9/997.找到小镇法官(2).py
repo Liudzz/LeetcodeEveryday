@@ -1,26 +1,20 @@
+# 824 ms
+# 6.26%
+# 19.4 MB
+# 5.84%
 class Solution:
     def findJudge(N: int, trust)-> int:
-        if N==1:
-            return 1
-        arr=[ [0 for j in range(N)] for i in range(N)]
-        for t in trust:
-            arr[t[0]-1][t[1]-1] = 1
-        flag = 1
+        oinum = [[0,0]for i in range(N)]
+        for i in range(len(trust)):
+            oinum[trust[i][0]-1][0] +=1
+            oinum[trust[i][1]-1][1] +=1
         for i in range(N):
-            flag = 1
-            if 1 not in arr[i]:
-                for j in range(N):
-                    if j!=i and arr[j][i] != 1:
-                        flag = 0
-                        break
-            else:
-                flag=0
-            if flag:
+            if oinum[i][0]==0 and oinum[i][1] == N-1:
                 return i+1
-        if not flag:
-            return -1
+        return -1
 
-# 408 ms
-# 8.82%
-# 25.7 MB
-# 5.11%
+if __name__=='__main__':
+    N = 2
+    trust = [[1, 2]]
+    result = Solution.findJudge(N,trust)
+    print(result)
