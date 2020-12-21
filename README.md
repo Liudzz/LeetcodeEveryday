@@ -9,3 +9,4 @@
 |11 |1,9,860,1365 | nothing! |
 |15|766|nth!|
 |16|997(low solution 0_0)|graph|
+|21|977,628|array|
