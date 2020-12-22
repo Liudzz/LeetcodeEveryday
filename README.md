@@ -10,3 +10,4 @@
 |15|766|nth|
 |16|997|graph|
 |21|977,628,1217,1518,605|array greedy(I AM GREEDY TODAY-.-)|
+|22|122,1046,1403,455|greedy|
