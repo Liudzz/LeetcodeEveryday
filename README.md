@@ -12,3 +12,4 @@
 |21|977,628,1217,1518,605|array greedy(I AM GREEDY TODAY-.-)|
 |22|122,1046,1403,455|greedy|
 |23|387，面17.10，1588，1550，剑59|sliding window|
+|29|219|hashtable|
